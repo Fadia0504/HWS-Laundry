@@ -87,7 +87,44 @@ JenisLayanan
 ├── reguler
 └── express
 ```
+## 9. Flowchart
 
+```text
+            ( Mulai )
+                |
+                v
+  /Input berat dan jenis layanan/
+                |
+                v
+        < berat < 2 kg ? >
+         |             |
+        Ya           Tidak
+         |             |
+         v             v
+ [beratHitung = 2] [beratHitung = berat]
+         |             |
+         +------+------+
+                |
+                v
+ [biaya = beratHitung x 7000]
+                |
+                v
+     < layanan express ? >
+         |             |
+        Ya           Tidak
+         |             |
+         v             |
+ [biaya = biaya        |
+  + 50% biaya]         |
+         |             |
+         +------+------+
+                |
+                v
+ /Tampilkan beratHitung dan total biaya/
+                |
+                v
+            ( Selesai )
+```
 ---
 
 # Bagian B - Program Dart (`tugas.dart`)
